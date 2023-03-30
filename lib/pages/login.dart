@@ -17,9 +17,17 @@ class Login extends StatelessWidget {
             // ignore: prefer_const_literals_to_create_immutables
             children: [
               const SizedBox(height: 64),
-              Mytextfield(),
+              Mytextfield(
+                TextInputTypee: TextInputType.emailAddress,
+                ispass: false,
+                hinttext: "Enter Your Email : ",
+              ),
               const SizedBox(height: 33),
-              Mytextfield(),
+              Mytextfield(
+                TextInputTypee: TextInputType.name,
+                ispass: true,
+                hinttext: "Enter Your Password : ",
+              ),
             ],
           ),
         ),
