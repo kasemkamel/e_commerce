@@ -14,7 +14,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-   
+    return ChangeNotifierProvider(
+      create: (context) {
+        return Cart();
+      },
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: Home(),
+      ),
     );
   }
 }
