@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 
+import '../shared/customtextfield.dart';
+
 class Login extends StatelessWidget {
   const Login({super.key});
 
@@ -12,27 +14,12 @@ class Login extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(33.0),
           child: Column(
+            // ignore: prefer_const_literals_to_create_immutables
             children: [
               const SizedBox(height: 64),
+              Mytextfield(),
               const SizedBox(height: 33),
-              TextField(
-                  keyboardType: TextInputType.emailAddress,
-                  obscureText: true,
-                  decoration: InputDecoration(
-                    hintText: "Enter Your Email : ",
-                    // To delete borders
-                    enabledBorder: OutlineInputBorder(
-                      borderSide: Divider.createBorderSide(context),
-                    ),
-                    focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
-                        color: Colors.grey,
-                      ),
-                    ),
-                    // fillColor: Colors.red,
-                    filled: true,
-                    contentPadding: const EdgeInsets.all(8),
-                  ))
+              Mytextfield(),
             ],
           ),
         ),
