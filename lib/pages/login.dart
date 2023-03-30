@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 class Login extends StatelessWidget {
@@ -30,7 +32,7 @@ class Login extends StatelessWidget {
                     filled: true,
                     contentPadding: const EdgeInsets.all(8),
                   )),
-              const SizedBox(height: 64),
+              const SizedBox(height: 33),
               TextField(
                   keyboardType: TextInputType.emailAddress,
                   obscureText: true,
