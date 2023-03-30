@@ -13,7 +13,7 @@ class Login extends StatelessWidget {
             children: [
               const SizedBox(height: 64),
               TextField(
-                  keyboardType: TextInputType.text,
+                  keyboardType: TextInputType.emailAddress,
                   obscureText: true,
                   decoration: InputDecoration(
                     hintText: "Enter Your Email : ",
