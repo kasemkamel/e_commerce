@@ -16,7 +16,7 @@ class Login extends StatelessWidget {
                   keyboardType: TextInputType.text,
                   obscureText: true,
                   decoration: InputDecoration(
-                    hintText: "Enter Your Password : ",
+                    hintText: "Enter Your Email : ",
                     // To delete borders
                     enabledBorder: OutlineInputBorder(
                       borderSide: Divider.createBorderSide(context),
