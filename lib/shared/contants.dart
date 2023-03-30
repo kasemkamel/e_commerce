@@ -11,4 +11,6 @@ const decorationTextfield = InputDecoration(
     ),
   ),
   // fillColor: Colors.red,
+  filled: true,
+  contentPadding: EdgeInsets.all(8),
 );
