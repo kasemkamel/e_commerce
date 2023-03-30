@@ -30,6 +30,7 @@ class Login extends StatelessWidget {
                     filled: true,
                     contentPadding: const EdgeInsets.all(8),
                   )),
+              const SizedBox(height: 64),
               TextField(
                   keyboardType: TextInputType.emailAddress,
                   obscureText: true,
